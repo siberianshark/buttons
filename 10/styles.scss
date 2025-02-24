@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1300px;
+    margin-top: 50px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    transition: all 0.4s ease;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+
+/* Button 1 - Neon Gradient */
+.btn-1 {
+    background: linear-gradient(45deg, #ff007f, #ff2a68, #ff6348);
+    background-size: 300% 300%;
+    position: relative;
+    overflow: hidden;
+}
+.btn-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    filter: blur(10px);
+    z-index: -1;
+}
+.btn-1:hover {
+    transform: scale(1.1) rotate(5deg);
+    background-position: 100% 0%;
+    animation: gradient-shift 3s ease infinite;
+}
+
+/* Button 2 - 3D Raised Effect */
+.btn-2 {
+    background: #2196f3;
+    border-radius: 30px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.btn-2:hover {
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
+    transform: translateY(-6px);
+}
+
+/* Button 3 - Liquid Metal */
+.btn-3 {
+    background: linear-gradient(45deg, #00bcd4, #4caf50);
+    background-size: 300% 300%;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+.btn-3::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.4);
+    filter: blur(25px);
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+.btn-3:hover {
+    transform: scale(1.1) rotate(5deg);
+    background-position: 100% 0%;
+    animation: gradient-shift 3s ease infinite;
+}
+
+/* Button 4 - Fireball */
+.btn-4 {
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.7), rgba(255, 140, 0, 0.7));
+    border-radius: 10px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+}
+.btn-4:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+    animation: fireball 1.5s infinite alternate;
+}
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes fireball {
+    0% {
+        transform: scale(1);
+        background: radial-gradient(circle, rgba(255, 0, 0, 0.7), rgba(255, 140, 0, 0.7));
+    }
+    100% {
+        transform: scale(1.15);
+        background: radial-gradient(circle, rgba(255, 100, 0, 0.8), rgba(255, 200, 0, 0.7));
+    }
+}
+
+/* Button 5 - Floating Cloud */
+.btn-5 {
+    background: #eeeeee;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.4s ease;
+}
+.btn-5::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background: rgba(255, 255, 255, 0.1);
+    filter: blur(8px);
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+.btn-5:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* Button 6 - Retro 3D */
+.btn-6 {
+    background: #ff5722;
+    border-radius: 5px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.btn-6:hover {
+    transform: rotate(10deg) translateY(-8px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Additional Buttons (7-15) will follow the same principles */
+
+/* Custom hover effects, gradient transitions, rotating, scaling, and more */

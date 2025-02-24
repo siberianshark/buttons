@@ -1,0 +1,146 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.button-wrapper {
+  position: relative;
+}
+
+.btn {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* 1. Hover animation with color change and shadow */
+.btn-hover-1 {
+  background: linear-gradient(45deg, #ff6ec7, #ff7eb3);
+  color: white;
+}
+
+.btn-hover-1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #ff7eb3, #ff6ec7);
+}
+
+/* 2. Neon button with glow effect */
+.btn-hover-2 {
+  background-color: #00f;
+  color: white;
+  border: 2px solid #00f;
+}
+
+.btn-hover-2:hover {
+  animation: neon-glow 1.5s infinite alternate;
+}
+
+@keyframes neon-glow {
+  0% {
+    box-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+  }
+  100% {
+    box-shadow: 0 0 20px #00f, 0 0 40px #00f, 0 0 60px #00f;
+  }
+}
+/* 3. Pulse effect on hover */
+.btn-hover-3 {
+  background-color: #9c27b0;
+  color: white;
+  border: 2px solid #9c27b0;
+}
+
+.btn-hover-3:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* 4. Color shift and rotation */
+.btn-hover-4 {
+  background: #4caf50;
+  color: white;
+  border-radius: 50%;
+}
+
+.btn-hover-4:hover {
+  animation: rotate-shift 1s ease-in-out;
+}
+
+@keyframes rotate-shift {
+  0% {
+    transform: rotate(0deg);
+    background-color: #4caf50;
+  }
+  50% {
+    transform: rotate(180deg);
+    background-color: #8bc34a;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: #4caf50;
+  }
+}
+/* 5. Interactive wave effect */
+.btn-hover-5 {
+  background-color: #ff9800;
+  color: white;
+  border: 2px solid #ff9800;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-hover-5::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.6s;
+}
+
+.btn-hover-5:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.btn-hover-5:hover {
+  color: #ff9800;
+  background-color: white;
+}/*# sourceMappingURL=styles.css.map */

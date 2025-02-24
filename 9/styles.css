@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #e0e0e0;
+  padding: 20px;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 50px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 20px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  transition: all 0.4s ease;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+/* Button 1 - Purple Gradient */
+.btn-1 {
+  background: linear-gradient(45deg, #9c27b0, #673ab7);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-1:hover {
+  transform: scale(1.1) rotate(15deg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Button 2 - Neon Green */
+.btn-2 {
+  background: linear-gradient(45deg, #00e676, #69f0ae);
+}
+
+.btn-2:hover {
+  transform: scale(1.1) rotate(5deg);
+  background: linear-gradient(45deg, #00c853, #00e676);
+}
+
+/* Button 3 - Sky Blue */
+.btn-3 {
+  background: linear-gradient(45deg, #00bcd4, #03a9f4);
+  border-radius: 12px;
+}
+
+.btn-3:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #0288d1, #01579b);
+}
+
+/* Button 4 - Sunset Orange */
+.btn-4 {
+  background: linear-gradient(45deg, #ff5722, #ff7043);
+}
+
+.btn-4:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(45deg, #e64a19, #f4511e);
+}
+
+/* Button 5 - Midnight Blue */
+.btn-5 {
+  background: linear-gradient(45deg, #263238, #37474f);
+}
+
+.btn-5:hover {
+  transform: scale(1.1) rotate(-15deg);
+  background: linear-gradient(45deg, #212121, #2c3e50);
+}
+
+/* Button 6 - Soft Pink */
+.btn-6 {
+  background: linear-gradient(45deg, #f06292, #f8bbd0);
+  padding: 25px 30px;
+}
+
+.btn-6:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #ec407a, #f48fb1);
+}
+
+/* Button 7 - Lemon Yellow */
+.btn-7 {
+  background: linear-gradient(45deg, #ffeb3b, #ffeb3b);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-7:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #fbc02d, #ffb300);
+}
+
+/* Button 8 - Vibrant Red */
+.btn-8 {
+  background: linear-gradient(45deg, #e91e63, #f50057);
+}
+
+.btn-8:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(45deg, #d81b60, #f44336);
+}
+
+/* Button 9 - Teal */
+.btn-9 {
+  background: linear-gradient(45deg, #009688, #4caf50);
+}
+
+.btn-9:hover {
+  transform: scale(1.1) rotate(360deg);
+  background: linear-gradient(45deg, #00796b, #388e3c);
+}
+
+/* Button 10 - Candy Pink */
+.btn-10 {
+  background: linear-gradient(45deg, #f48fb1, #f06292);
+}
+
+.btn-10:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #ec407a, #f50057);
+}
+
+/* Button 11 - Gold Gradient */
+.btn-11 {
+  background: linear-gradient(45deg, #ffd54f, #ffca28);
+  border-radius: 25px;
+}
+
+.btn-11:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(45deg, #ff9800, #ff5722);
+}
+
+/* Button 12 - Ocean Blue */
+.btn-12 {
+  background: linear-gradient(45deg, #00bcd4, #2196f3);
+}
+
+.btn-12:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #0288d1, #03a9f4);
+}
+
+/* Button 13 - Pastel Violet */
+.btn-13 {
+  background: linear-gradient(45deg, #9c27b0, #ab47bc);
+}
+
+.btn-13:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #8e24aa, #7b1fa2);
+}
+
+/* Button 14 - Rich Green */
+.btn-14 {
+  background: linear-gradient(45deg, #388e3c, #4caf50);
+}
+
+.btn-14:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #2e7d32, #66bb6a);
+}
+
+/* Button 15 - Coral Pink */
+.btn-15 {
+  background: linear-gradient(45deg, #ff7043, #ff5722);
+}
+
+.btn-15:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #f44336, #e91e63);
+}/*# sourceMappingURL=styles.css.map */

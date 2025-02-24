@@ -1,0 +1,257 @@
+/* Основной стиль контейнера для кнопок */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Автоматически заполняет строку */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    margin-top: 50px;
+}
+
+/* Контейнер для каждой кнопки */
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Высота контейнера для каждой кнопки */
+}
+
+/* Основной стиль для кнопок */
+.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* 1. Кнопка с эффектом разлета */
+.btn1 {
+    background: linear-gradient(45deg, #FF6F61, #FF6347);
+    color: white;
+}
+.btn1:hover {
+    animation: burst 0.5s forwards;
+}
+@keyframes burst {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2); opacity: 0; }
+}
+
+/* 2. Кнопка с эффектом свечения */
+.btn2 {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid transparent;
+}
+.btn2:hover {
+    border-color: #4CAF50;
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.8);
+    transform: scale(1.05);
+}
+
+/* 3. Кнопка с эффектом волны */
+.btn3 {
+    background: linear-gradient(45deg, #00C9FF, #92FE9D);
+    color: white;
+}
+.btn3:hover {
+    animation: wave 1s infinite alternate;
+}
+@keyframes wave {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+/* 4. Кнопка с эффектом заливки */
+.btn4 {
+    background-color: #FF9800;
+    color: white;
+}
+.btn4:hover {
+    background-color: #FF5722;
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(255, 87, 34, 0.4);
+}
+
+/* 5. Кнопка с 3D эффектом */
+.btn5 {
+    background-color: #9C27B0;
+    color: white;
+    box-shadow: 0px 10px 15px rgba(156, 39, 176, 0.3);
+}
+.btn5:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 18px 25px rgba(156, 39, 176, 0.4);
+}
+
+/* 6. Кнопка с анимацией "скольжения" */
+.btn6 {
+    background-color: #FF5722;
+    color: white;
+}
+.btn6:hover {
+    transform: translateX(10px);
+    animation: slide 0.5s ease forwards;
+}
+@keyframes slide {
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(20px); }
+}
+
+/* 7. Кнопка с эффектом вращения */
+.btn7 {
+    background-color: #2196F3;
+    color: white;
+}
+.btn7:hover {
+    transform: rotate(15deg);
+    box-shadow: 0px 5px 15px rgba(33, 150, 243, 0.4);
+}
+
+/* 8. Кнопка с эффектом пульсации */
+.btn8 {
+    background-color: #607D8B;
+    color: white;
+}
+.btn8:hover {
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* 9. Кнопка с эффектом тени */
+.btn9 {
+    background-color: #FFEB3B;
+    color: #000;
+}
+.btn9:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(255, 235, 59, 0.6);
+}
+
+/* 10. Кнопка с градиентным эффектом */
+.btn10 {
+    background: linear-gradient(45deg, #FF9800, #FF5722);
+    color: white;
+}
+.btn10:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #FF5722, #FF9800);
+}
+
+/* 11. Кнопка с эффектом штрихов */
+.btn11 {
+    background-color: #795548;
+    color: white;
+    border: 2px solid transparent;
+}
+.btn11:hover {
+    border-color: #795548;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px rgba(121, 85, 72, 0.6);
+}
+
+/* 12. Кнопка с эффектом сдвига */
+.btn12 {
+    background-color: #673AB7;
+    color: white;
+}
+.btn12:hover {
+    transform: translateY(-10px);
+}
+
+/* 13. Кнопка с эффектом "скелета" */
+.btn13 {
+    background-color: transparent;
+    color: #E91E63;
+    border: 2px solid #E91E63;
+}
+.btn13:hover {
+    background-color: #E91E63;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* 14. Кнопка с эффектом исчезновения */
+.btn14 {
+    background-color: #E91E63;
+    color: white;
+}
+.btn14:hover {
+    animation: fadeIn 0.5s forwards;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* 15. Кнопка с эффектом размытия */
+.btn15 {
+    background-color: #03A9F4;
+    color: white;
+}
+.btn15:hover {
+    filter: blur(2px);
+    transform: scale(1.1);
+}
+
+/* 16. Кнопка с эффектом резкости */
+.btn16 {
+    background-color: #8BC34A;
+    color: white;
+}
+.btn16:hover {
+    filter: contrast(150%);
+    transform: scale(1.05);
+}
+
+/* 17. Кнопка с эффектом градиентного свечения */
+.btn17 {
+    background: linear-gradient(45deg, #E91E63, #9C27B0);
+    color: white;
+}
+.btn17:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(233, 30, 99, 0.6);
+}
+
+/* 18. Кнопка с эффектом света */
+.btn18 {
+    background-color: #8BC34A;
+    color: white;
+}
+.btn18:hover {
+    transform: scale(1.1);
+    background-color: #CDDC39;
+}
+
+/* 19. Кнопка с эффектом фликера */
+.btn19 {
+    background-color: #FFC107;
+    color: #000;
+}
+.btn19:hover {
+    animation: flicker 0.8s infinite;
+}
+@keyframes flicker {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* 20. Кнопка с эффектом "приклеивания" */
+.btn20 {
+    background-color: #009688;
+    color: white;
+}
+.btn20:hover {
+    transform: translateY(2px);
+    box-shadow: 0px 0px 10px rgba(0, 150, 136, 0.6);
+}

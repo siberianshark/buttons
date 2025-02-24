@@ -1,0 +1,138 @@
+/* Основной стиль контейнера для кнопок */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Автоматически заполняет строку */
+    gap: 15px;
+    padding: 20px;
+    justify-items: center;  /* Центрируем элементы */
+    margin-top: 50px;
+}
+
+/* Основной стиль для кнопок */
+.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Стиль для кнопок с различными эффектами */
+
+/* 1. Кнопка с эффектом сдвига */
+.btn1 {
+    background-color: #4CAF50;
+    color: white;
+}
+.btn1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 15px rgba(0, 128, 0, 0.4);
+}
+
+/* 2. Кнопка с эффектом светящейся рамки */
+.btn2 {
+    background-color: #2196F3;
+    color: white;
+    border: 2px solid #2196F3;
+}
+.btn2:hover {
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(33, 150, 243, 0.7);
+}
+
+/* 3. Кнопка с анимацией волны */
+.btn3 {
+    background-color: #FF5722;
+    color: white;
+    border: 2px solid #FF5722;
+}
+.btn3:hover {
+    animation: wave 0.4s infinite alternate;
+}
+@keyframes wave {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+/* 4. Кнопка с эффектом заполнения фоном */
+.btn4 {
+    background-color: #FFC107;
+    color: white;
+}
+.btn4:hover {
+    background-color: #FF5722;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* 5. Кнопка с эффектом растягивания */
+.btn5 {
+    background-color: #9C27B0;
+    color: white;
+    border-radius: 50px;
+}
+.btn5:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(156, 39, 176, 0.6);
+}
+
+/* 6. Кнопка с эффектом пульсации */
+.btn6 {
+    background-color: #673AB7;
+    color: white;
+}
+.btn6:hover {
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* 7. Кнопка с эффектом вращения */
+.btn7 {
+    background-color: #E91E63;
+    color: white;
+}
+.btn7:hover {
+    transform: rotate(15deg);
+}
+
+/* 8. Кнопка с градиентом и тенью */
+.btn8 {
+    background: linear-gradient(45deg, #FF9800, #FF5722);
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.btn8:hover {
+    transform: scale(1.05);
+}
+
+/* 9. Кнопка с эффектом замедленного появления */
+.btn9 {
+    background-color: #795548;
+    color: white;
+    opacity: 0.8;
+}
+.btn9:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+/* 10. Кнопка с эффетом распада */
+.btn10 {
+    background-color: #607D8B;
+    color: white;
+    border: 2px solid #607D8B;
+}
+.btn10:hover {
+    animation: explode 1s forwards;
+}
+@keyframes explode {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2); opacity: 0; }
+}
+
+/* Добавьте дополнительные кнопки 11-20 с аналогичными эффектами */
